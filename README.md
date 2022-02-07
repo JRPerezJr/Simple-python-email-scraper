@@ -21,6 +21,7 @@
 
 - Git
 - Python3
+- Docker (To run as a container)
 
 ## 🛠 Install and Run Locally
 
@@ -43,19 +44,25 @@ pip install -r requirements.txt
 ```
 Make the file executable with
 ```shell
-chmod +x email_scaper.py
+chmod +x email_scraper.py
 #or
-sudo chmod +x email_scaper.py
+sudo chmod +x email_scraper.py
 ```
 
 ## 👩‍💻 👨‍💻 Usage
 
 Run with 
 ```shell
-./email_scaper.py
+./email_scraper.py
 #or
-python3 email_scaper.py
+python3 email_scraper.py
 ```
+Run anywhere with Docker
+```shell
+ docker run -it --rm --name email_scraper jperezdevinjp/python_email_scraper
+```
+<br>
+
 > Then enter the domain name 
 > Ex. `https://example.com`
 > The program will search all the links for email addresses and print it out in the console.
